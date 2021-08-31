@@ -1,0 +1,56 @@
+.field{
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    background-image: url("/assets/board.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-stack{
+    position: relative;
+    img{
+        position: absolute;
+        height: 250px;
+        width: auto;
+        
+    };
+    
+}
+.top-card{
+    cursor: pointer;
+    transition: 0.125s ease-in-out;
+    &:hover{
+        transform: scale(1.2) translateY(-12px);
+    }
+}
+
+.played-card{
+    
+}
+
+.pick-card{    
+    animation: pick-card-animation 1s ease-in-out;
+    transform: scale(1) translateX(0px) translatey(250px) rotate(90deg);
+}
+
+@keyframes pick-card-animation{
+    0%{
+        transform: scale(1.2);
+    }
+    25%{
+        transform: scale(1.5);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    75%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1) translateX(0px) translatey(250px) rotate(90deg);
+
+    }
+}
+
