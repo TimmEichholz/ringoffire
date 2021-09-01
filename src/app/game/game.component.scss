@@ -26,9 +26,7 @@
     }
 }
 
-.played-card{
-    
-}
+
 
 .pick-card{    
     animation: pick-card-animation 1s ease-in-out;
@@ -58,4 +56,10 @@
     position: absolute;
     right:0;
 
+}
+
+.fab-button{
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
 }
