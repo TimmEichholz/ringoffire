@@ -1,0 +1,23 @@
+.player-box{
+    
+    height: 100px;
+    width: 250px;
+    background-color: orange;
+    color: black;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    display: flex;
+    align-items: center;
+    img{
+        height: 90px;
+        width: auto;
+        object-fit: cover;
+        padding-left:8px;
+        border-radius: 100%;
+    }
+    span{
+        padding-left:16px;
+        font-size: larger;
+        font-weight: 600;
+    }
+}
