@@ -1,15 +1,15 @@
 .player-box{
     
-    height: 100px;
+    height: 75px;
     width: 250px;
-    background-color: orange;
+    background-color: rgba(150,150,150, 0.8);
     color: black;
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;
+    border-bottom-left-radius: 37.5px;
+    border-top-left-radius: 37.5px;
     display: flex;
     align-items: center;
     img{
-        height: 90px;
+        height: 90%;
         width: auto;
         object-fit: cover;
         padding-left:8px;
@@ -20,4 +20,7 @@
         font-size: larger;
         font-weight: 600;
     }
+}
+.player-active{
+    background-color: orange !important;
 }

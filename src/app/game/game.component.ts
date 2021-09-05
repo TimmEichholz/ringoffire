@@ -32,7 +32,11 @@ newGame(){
     this.currentCard = this.game.stack.pop()
     this.game.playedCards.push(this.currentCard);
     this.pickCardAnimation = true
-
+if(this.game.players.length>0){
+    this.game.currentPlayer++
+    this.game.currentPlayer = this.game.currentPlayer % this.game.players.length;
+  }
+    
     setTimeout(() => {
       this.pickCardAnimation = false
     }, 1200);
@@ -40,7 +44,16 @@ newGame(){
   }
   openDialog():void{
     const dialogRef = this.dialog.open(DialogAddPlayerComponent)
+
+    dialogRef.afterClosed().subscribe((name:string) =>{
+      if(name && name.length > 0){
+      this.game.players.push(name);}
+      console.log('the dialog was closed', name);
+      
+    })
   }
+
+  
 }
 
 
