@@ -16,10 +16,13 @@ import { DialogAddPlayerComponent } from './dialog-add-player/dialog-add-player.
 import { GameInfoComponent } from './game-info/game-info.component';
 import {MatCardModule} from '@angular/material/card';
 
-
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
+
+
     AppComponent,
     StartscreenComponent,
     GameComponent,
@@ -28,6 +31,7 @@ import {MatCardModule} from '@angular/material/card';
     GameInfoComponent
   ],
   imports: [
+    AngularFireModule.initializeApp(environment.firebase),
     MatCardModule,
     BrowserModule,
     AppRoutingModule,

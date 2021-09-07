@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ring-of-fire-f2ea9": {
+      "hosting": {
+        "ringoffire": [
+          "ring-of-fire-f2ea9"
+        ]
+      }
+    }
+  }
+}
